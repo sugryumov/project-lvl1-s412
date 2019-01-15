@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-
-import {
-  greetingUser
-} from '..';
+import greetingUser from '..';
 
 greetingUser();
