@@ -5,9 +5,9 @@ const isEven = number => number % 2 === 0;
 
 const gameEven = () => {
   const greetingUser = '\nWelcome to the Brain Games!';
-  const descriptionGame = 'Answer "yes" if number even otherwise answer "no".\n';
+  const description = 'Answer "yes" if number even otherwise answer "no".\n';
   console.log(greetingUser);
-  console.log(descriptionGame);
+  console.log(description);
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
