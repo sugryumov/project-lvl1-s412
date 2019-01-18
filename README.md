@@ -10,3 +10,6 @@
 
 # Console game brain-gcd
 <a href="https://asciinema.org/a/1bRF7W1zKoMmqnOKpu7Tb3vwh" target="_blank"><img src="https://asciinema.org/a/1bRF7W1zKoMmqnOKpu7Tb3vwh.svg" /></a>
+
+# Console game brain-progression
+<a href="https://asciinema.org/a/CeMVncqlihbU1Dc9ClgkbZ4k3" target="_blank"><img src="https://asciinema.org/a/CeMVncqlihbU1Dc9ClgkbZ4k3.svg" /></a>
