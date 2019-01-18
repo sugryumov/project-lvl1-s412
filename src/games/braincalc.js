@@ -1,30 +1,32 @@
 import { cons } from 'hexlet-pairs';
-import gameEngine from '../index';
+import gameEngine from '..';
+import generateNum from '../utils';
 
-const description = 'What is the result of the expression?\n';
+const description = 'What is the result of the expression?';
+const minGenerateNum = 1;
+const maxGenerateNum = 100;
+const maxGenerateNumOperator = 3;
 
 const game = () => {
-  const leftOperand = Math.floor(Math.random() * 100);
-  const rightOperand = Math.floor(Math.random() * 100);
-  const operator = Math.floor(Math.random() * 3) + 1;
+  const leftOperand = generateNum(minGenerateNum, maxGenerateNum);
+  const rightOperand = generateNum(minGenerateNum, maxGenerateNum);
+  const operator = generateNum(minGenerateNum, maxGenerateNumOperator);
 
   let question = '';
   let correctAnswer = '';
 
   switch (operator) {
     case 1:
-      question = `${leftOperand} + ${rightOperand} `;
+      question = `${leftOperand} + ${rightOperand}`;
       correctAnswer = leftOperand + rightOperand;
       break;
     case 2:
-      question = `${leftOperand} - ${rightOperand} `;
+      question = `${leftOperand} - ${rightOperand}`;
       correctAnswer = leftOperand - rightOperand;
       break;
-    case 3:
-      question = `${leftOperand} * ${rightOperand} `;
+    default:
+      question = `${leftOperand} * ${rightOperand}`;
       correctAnswer = leftOperand * rightOperand;
-      break;
-    // no default
   }
 
   return cons(question, correctAnswer);
