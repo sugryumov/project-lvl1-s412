@@ -7,3 +7,6 @@
 
 # Console game brain-calc
 <a href="https://asciinema.org/a/hjTtizRHBjqCT0q9bSowJ0mtZ" target="_blank"><img src="https://asciinema.org/a/hjTtizRHBjqCT0q9bSowJ0mtZ.svg" /></a>
+
+# Console game brain-gcd
+<a href="https://asciinema.org/a/1bRF7W1zKoMmqnOKpu7Tb3vwh" target="_blank"><img src="https://asciinema.org/a/1bRF7W1zKoMmqnOKpu7Tb3vwh.svg" /></a>
