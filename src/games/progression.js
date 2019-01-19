@@ -13,7 +13,7 @@ const game = () => {
   let question = '';
   let correctAnswer = '';
 
-  for (let i = 1; i <= length; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     if (hiddenIndex === i) {
       question += '.. ';
     } else {
@@ -22,7 +22,7 @@ const game = () => {
     correctAnswer = String(startNumber + hiddenIndex * progressionStep);
   }
 
-  return cons(question, correctAnswer);
+  return cons(question.trim(), correctAnswer);
 };
 
 export default () => gameEngine(description, game);

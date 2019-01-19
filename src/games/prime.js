@@ -7,23 +7,21 @@ const minGenerateNum = 1;
 const maxGenerateNum = 100;
 const isPrime = (num) => {
   if (num <= 1) {
-    return 'no';
+    return false;
   }
 
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) {
-      return 'no';
+      return false;
     }
   }
 
-  return 'yes';
+  return true;
 };
 
 const game = () => {
-  const number = generateNum(minGenerateNum, maxGenerateNum);
-
-  const question = number;
-  const correctAnswer = isPrime(number);
+  const question = generateNum(minGenerateNum, maxGenerateNum);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return cons(question, correctAnswer);
 };
