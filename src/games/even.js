@@ -2,7 +2,6 @@ import { cons } from 'hexlet-pairs';
 import gameEngine from '..';
 import generateNum from '../utils';
 
-
 const description = 'Answer "yes" if number even otherwise answer "no".';
 const isEven = number => number % 2 === 0;
 const minGenerateNum = 1;

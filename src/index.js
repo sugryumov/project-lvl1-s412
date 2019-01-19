@@ -12,7 +12,7 @@ const gameEngine = (description, game) => {
   for (let i = 0; i < numberOfRounds; i += 1) {
     const gameDate = game();
     const question = car(gameDate);
-    const correctAnswer = String(cdr(gameDate));
+    const correctAnswer = cdr(gameDate);
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 

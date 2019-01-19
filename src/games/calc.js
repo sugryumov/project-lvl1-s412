@@ -29,7 +29,7 @@ const game = () => {
       correctAnswer = leftOperand * rightOperand;
   }
 
-  return cons(question, correctAnswer);
+  return cons(question, String(correctAnswer));
 };
 
 export default () => gameEngine(description, game);
